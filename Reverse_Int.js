@@ -15,6 +15,10 @@ Example 4:
 Input: x = 0
 Output: 0
 **/
-var reverse = function(x) {
-    return (parseFloat(x.toString().split('').reverse().join(''))* Math.sign(x));
-};
+const result = parseInt(x.toString().split('').reverse().join(''));
+if(result >  0x7FFFFFFF){
+    //For checking maximum positive value for a 32-bit signed binary integer
+    return 0;
+}
+return Math.sign(x) * result;
+
