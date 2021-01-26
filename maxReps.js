@@ -29,3 +29,18 @@ var findMaxConsecutiveOnes = function(nums) {
     }
     return seccheck;
 };
+/*
+var findMaxConsecutiveOnes = function(nums) {
+    var count = 0; 
+        var result = 0; 
+        for (var i = 0; i < nums.length; i++){ 
+            if (nums[i] == 0) 
+                count = 0; 
+            else{ 
+                count++;
+                result = Math.max(result, count); 
+            } 
+        } 
+        return result;  
+};
+*/
