@@ -40,3 +40,11 @@ var searchInsert = function(nums, target) {
     }
     return nums.length;
 };
+let i=0;
+    while(nums[i]<target){
+        i++;
+        if(nums[i] == target){
+            return i;
+        }
+    }
+     return i;
