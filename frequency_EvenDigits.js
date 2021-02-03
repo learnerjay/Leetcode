@@ -41,3 +41,10 @@ var findNumbers = function(nums) {
     }
     return count;
 };
+/*
+ let count = 0;
+    for(let number in nums)
+      if (nums[number].toString().length % 2 === 0) count++
+    
+    return count;
+*/
