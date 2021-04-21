@@ -55,4 +55,5 @@ var validMountainArray = function(arr) {
         index++;
         drop = true;
     }
+     return rise & drop && index ==arr.length; 
 };
