@@ -46,3 +46,16 @@ var dailyTemperatures = function(temp) {
     }
     return result;
 };
+/* 
+let result = new Array(temp.length).fill(0);
+    let stack = [];
+    for(let i=0;i<temp.length;i++){
+        while(stack.length > 0 && temp[i] > temp[stack[stack.length-1]]){
+        let index = stack.pop();
+            result[index]= i-index;
+            
+        }
+        stack.push(i);
+    }
+    return result;
+*/
