@@ -39,3 +39,12 @@ var singleNonDuplicate = function(nums) {
     } 
     return xor;
 };
+/*
+Another Solution
+ let n = nums.length;
+    for(let i=0;i<n;i+=2){
+       if(nums[i] != nums[i+1]){
+          return nums[i]
+       }
+    } 
+*/
