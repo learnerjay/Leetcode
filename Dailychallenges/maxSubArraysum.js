@@ -52,3 +52,15 @@ var maxSubArray = function(nums) {
     }
     return maxSum;
 }
+/*
+let maxSum = 0, thisSum = 0;
+    for (let i = 0; i < nums.length; ++i){
+        thisSum += nums[i];
+    if(thisSum > maxSum){
+        maxSum = thisSum;
+    }else if(thisSum < 0 ){
+        thisSum = 0;
+    	}
+    }
+    return maxSum; 
+*/
